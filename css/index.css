@@ -168,6 +168,7 @@ p {
   color: #454A59;
   background-color: #F6F6F6;
   padding-bottom: 20px;
+  margin: 0 10%;
 }
 .nav-content h1 {
   font-size: 3.5rem;
@@ -181,6 +182,12 @@ p {
   text-decoration: none;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  .nav-content nav a {
+    padding: 16px;
+    font-size: 1.6rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -193,6 +200,7 @@ footer {
 }
 .home .intro .logo {
   border-radius: 10px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -204,6 +212,22 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -228,8 +252,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 30px 8px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -240,7 +276,6 @@ footer {
 .home .walk .walk-text .btn {
   display: flex;
   justify-content: center;
-  position: absolute;
   align-items: center;
   width: 100px;
   height: 30px;
@@ -255,12 +290,32 @@ footer {
   color: blue;
   background-color: green;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 470px;
+    height: 70px;
+    font-size: 18px;
+    margin: auto;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    height: 360px;
+  }
 }

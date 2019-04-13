@@ -297,7 +297,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 470px;
+    width: 90%;
     height: 70px;
     font-size: 18px;
     margin: auto;

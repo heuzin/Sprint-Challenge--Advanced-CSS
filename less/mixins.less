@@ -1,1 +1,30 @@
 // Mixins Here
+
+.display-flex-center() {
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+}
+
+.anchor-style() {
+	text-decoration: none;
+	color: @header-font-color;
+}
+
+.btn-style(@btn-color:white, @btn-backgroun-color:gray) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 7px;
+    color: @btn-color;
+    background-color: @btn-backgroun-color;
+    font-size: 15px;
+}
+
+.color(@text-color: blue, @background-color: green) {
+    color: @text-color;
+    background-color: @background-color;
+}
